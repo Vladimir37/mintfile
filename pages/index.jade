@@ -1,0 +1,8 @@
+extends layout
+
+block main
+    h1 Загрузите файл
+    form(method='post', action='/download', enctype='multipart/form-data')
+        input(type='file', name='downfile', required='required')
+        br
+        input(type='submit', value='Загрузить')

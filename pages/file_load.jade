@@ -1,0 +1,26 @@
+extends layout
+
+block main
+    h1 Файл
+    article.list
+        img(src='#{ext_addr}', alt='#{ext_id}').
+        ul
+            li 
+                b Номер файла: 
+                span #{numb}
+            li 
+                b Имя файла: 
+                span #{name}
+            li 
+                b Размер: 
+                span #{size} мегабайт
+            li 
+                b Загружен: 
+                span #{date}
+            li 
+                b Скачан: 
+                span #{down} раз
+        h2 Ссылка на файл
+        input(type='text', value='http://mintfile.ru/file/#{numb}')#file_link
+    a(href='/download/#{down_link}', download='#{name}')
+        input(type='button', value='Скачать')#down_file

@@ -1,0 +1,17 @@
+{
+  "name": "mintfile",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "body-parser": "*",
+    "mysql": "*",
+    "express": "*",
+    "formidable": "*",
+    "serve-favicon": "*",
+    "path": "*",
+    "jade": "*"
+  }
+}

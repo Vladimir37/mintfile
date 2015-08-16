@@ -1,0 +1,17 @@
+extends layout
+
+block main
+    h1 Файл успешно загружен!
+    article.list
+        ul
+            li 
+                b Номер файла: 
+                span #{numb}
+            li 
+                b Имя файла: 
+                span #{name}
+            li 
+                b Размер: 
+                span #{size} мегабайт
+        h2 Ссылка на файл
+        input(type='text', value='http://mintfile.ru/file/#{numb}')#file_link

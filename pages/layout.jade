@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+html(lang="ru")
+head
+	meta(charset="UTF-8")
+	title Mintfile
+	link(rel='stylesheet/less', href='/source/st', type='text/css')
+	script(src='/source/less', type='text/javascript')
+	script(src='/source/jquery', type='text/javascript')
+	script(src='/source/client', type='text/javascript')
+	block meta
+body
+	header
+		a(href='/')
+			article.logo
+				img(src='/source/img/logo')
+				img(src='/source/img/text')
+		article.search
+			input(type='text', placeholder='Номер файла')#num_file
+			input(type='button', value='Поиск')#sea_but
+	section.main
+		block main
+	footer
+		block footer
+			

@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    background: lighten(#9af793, 20%);
+    font-family: Calibri;
+    header {
+        height: 130px;
+        padding: 15px;
+        .logo {
+            float: left;
+            img:first-of-type {
+                width: 100px;
+            }
+        }
+        .search {
+            float: right;
+            margin-top: 65px;
+            input {
+                font-size: 20px;
+                box-sizing: border-box;
+                &[type='button'] {
+                    font-weight: bold;
+                    color: white;
+                    background: green;
+                    border: none;
+                    height: 29px;
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+    .main {
+        text-align: center;
+        p {
+            width: 500px;
+            display: inline-block;
+        }
+        input, textarea {
+            resize: none;
+            font-size: 18px;
+            width: 300px;
+            margin-top: 15px;
+            outline: none;
+        }
+        input[type='submit'] {
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            background: green;
+            border: none;
+            width: auto;
+            padding: 5px 10px;
+        }
+        .list {
+            font-size: 18px;
+            h2 {
+                margin: 0px;
+                font-size: 25px;
+            }
+            ul {
+                text-align: left; 
+                width: 500px;
+                margin: 0 auto;
+            }
+            #file_link {
+                text-align: center;
+            }
+            img {
+                &[alt='pic_img'] {
+                    max-height: 550px;
+                    margin-bottom: 20px;
+                }
+                &[alt='pic_logo'] {
+                    width: 150px;
+                }
+            }
+        }
+    }
+    #down_file {
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        background: green;
+        border: none;
+        width: auto;
+        padding: 5px 10px;
+        margin-bottom: 20px;
+    }
+    a {
+        text-decoration: none;
+    }
+}
